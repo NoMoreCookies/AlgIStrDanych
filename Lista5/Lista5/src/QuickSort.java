@@ -2,7 +2,7 @@ import core.AbstractSortingAlgorithm;
 
 import java.util.*;
 
-public class QuickSort<T> extends AbstractSortingAlgorithm<T> {
+public class QuickSort<T> extends AbstractSortingAlgorithm<T> implements QuickSortInterface<T>{
 
     ///TWORZĘ ZMIENNE POMOCNICZE
     //------------------------------------------------------------------------------------------------------------------

@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Comparator;
 
-public class MergeSort<T > extends AbstractSortingAlgorithm<T>
+public class MergeSortTable<T > extends AbstractSortingAlgorithm<T>
 {
    
-    public MergeSort(Comparator<? super T> comparator){
+    public MergeSortTable(Comparator<? super T> comparator){
 
         super(comparator);
     }

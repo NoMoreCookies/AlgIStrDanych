@@ -2,7 +2,6 @@
 import java.util.Comparator;
 
 import core.AbstractSortingAlgorithm;
-import core.AbstractSwappingSortingAlgorithm;
 import testing.*;
 import testing.comparators.*;
 import testing.generation.*;
@@ -16,7 +15,7 @@ public class Main {
 		Generator<MarkedValue<Integer>> generator1 = new MarkingGenerator<Integer>(new RandomIntegerArrayGenerator(100));
 		Generator<MarkedValue<Integer>> generator2 = new MarkingGenerator<Integer>(new LinkedListGenerator<>(new RandomIntegerArrayGenerator(100)));
 
-		AbstractSortingAlgorithm<MarkedValue<Integer>> algorithm1 = new MergeSort<MarkedValue<Integer>>(markedComparator);
+		AbstractSortingAlgorithm<MarkedValue<Integer>> algorithm1 = new MergeSortTable<MarkedValue<Integer>>(markedComparator);
 		AbstractSortingAlgorithm<MarkedValue<Integer>> algorithm2 = new MergeSortList<MarkedValue<Integer>>(markedComparator);
 		AbstractSortingAlgorithm<MarkedValue<Integer>> algorithm3 = new QuickSort<MarkedValue<Integer>>(markedComparator,true);
 

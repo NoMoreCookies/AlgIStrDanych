@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Comparator;
 
-public class MergeSortList<T> extends AbstractSortingAlgorithm<T> {
+public class MergeSortList<T> extends AbstractSortingAlgorithm<T>  {
 
     public MergeSortList(Comparator<? super T> comparator) {
         super(comparator);
